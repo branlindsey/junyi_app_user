@@ -25,13 +25,13 @@ Number of data points (rows, pages scraped): 259259
 <table> 
 <tr>
 <td>
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png', width='300' height='250'> 
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png'> 
     </td>
 <td> 
   
 </td>    
 <td>
- <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='300' height='250'> 
+ <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png'> 
     </td>
 </table> 
     
