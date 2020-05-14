@@ -44,7 +44,7 @@ This data focuses on Geometry and Algrebra lessons in the platform from October 
 To get a better sense of the entire data set, I performed exploratory data analysis.  I used the exploratory data analysis to get a sense of what feature engineering would be necessary.  
 
 **Days Active **
-[Graph 1](junyi_app_user/images/users_vs_active_days.png)
+![Graph 1](https://github.com/branlindsey/junyi_app_user/blob/master/images/users_vs_active_days.png)
 
 Around 2/3 of the users in the dataset were only active a single day. Looking at 10 days of usage, the curve flattens out, so I decided to use users with more than 10 days of usage for my prediction.    
 
