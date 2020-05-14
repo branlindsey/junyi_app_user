@@ -18,14 +18,23 @@ https://pslcdatashop.web.cmu.edu/Project?id=244
 Number of data points (rows, pages scraped): 259259
 
 ## What is Junyi Academy
-Junyi Academy is a Chinese platform that was started with the help of Khan Academy, and uses many of the same strategies and metrics to teach students.   In this way, it will provide an approximation of the applications that many students around the world are currently using.  
+[Junyi Academy](https://www.junyiacademy.org/) is a Chinese platform that was started with the help of Khan Academy, and uses many of the same strategies and metrics to teach students.   In this way, it will provide an approximation of the applications that many students around the world are currently using.  
 
-https://www.junyiacademy.org/
 
-[screen_shot](https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png) 
 
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='200' height='200'> 
-
+<table> 
+<tr>
+<td>
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png', width='300' height='250'> 
+    </td>
+<td> 
+  
+</td>    
+<td>
+ <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='300' height='250'> 
+    </td>
+</table> 
+    
 This data focuses on Geometry and Algrebra lessons in the platform from October 2013 to January 2015. The entire dataset was used to complete EDA.  For modelling and predictions, the 2014 calendar year was used.   
 
 
@@ -62,15 +71,7 @@ It looked like the features of correct answers, whether hints were used, and the
 
 
 Confusion Matrix 
-<table> 
-<tr>
-<td>
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png', width='200' height='200'> 
-    </td>
-<td> 
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='200' height='200'> 
-    </td>
- <\table>
+
 
 
 
