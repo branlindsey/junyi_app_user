@@ -23,7 +23,7 @@ def select_date(df, df_time_col, date1, date2):
     df = (df[(df[df_time_col]>=date1)& (df[df_time_col]<=date2)])
     return df 
 
-def create_target(filepath, start, end):
+def create_target(filepath, start, end, user_table):
     target_data = pd.read_pickle('../junyi_df.pickle')
     convert_dates(target_data, 'time_done')
     target_data = select_dates(target_data, 'time_done', start, end)

@@ -43,16 +43,18 @@ This data focuses on Geometry and Algrebra lessons in the platform from October 
 ### EDA
 To get a better sense of the entire data set, I performed exploratory data analysis.  I used the exploratory data analysis to get a sense of what feature engineering would be necessary.  
 
-Days Active Graph
-Around 2/3 of the users in the dataset were only active a single day.    
+**Days Active **
+[Graph 1](junyi_app_user/images/users_vs_active_days.png)
 
-Activities Graph
+Around 2/3 of the users in the dataset were only active a single day. Looking at 10 days of usage, the curve flattens out, so I decided to use users with more than 10 days of usage for my prediction.    
+
+*Activities Graph*
 There is a large spike at 10 activities.  This could be attributed to the fact that 10 correct activities in a row are needed to earn a proficiency in a topic.   Nearly half of all of the users in dataset got to this level of activities and then stopped using the site.   
 
-Days Active vs. Activities 
+*Days Active vs. Activities*
 This plot demonstrates that most of the usage clusters toward the bottom right, but there is also a wide variety of usage that extends beyond a hundred days and many thousands of activities.   
 
-Months? 
+*Months?* 
 It is possible to see that usage varies by month, especially during July and August. Schools in China take a break during this season too, but usage ramps up in the fall.   
 
 Can I get a turnover graph? 
@@ -62,13 +64,24 @@ There is a lot of turnover!
 The data set contains activities 
 - Show columns 
 
+
+
 ### Modeling
 The initial model was a Logistic Regression performed using the mean statistics of users over the first 6 months of 2014 and then trying to predict whether these users would be active in the second part of the year. 
 
-I reviewed the beta-coefficients to get a sense of which features were impacting the prediction. 
+Because the churn rate is so high on this user set, the target value is heavily weighted. This made predicting a churn very easy and in general the accuracy score was high. For the purposes of predicting who will remain a user, the recall and precision scores are much more valuable.  
+
+I reviewed the beta-coefficients in the initial logistic regression. to get a sense of which features were impacting the prediction. 
 It looked like the features of correct answers, whether hints were used, and the amount hints used were the most impactful.  
 
+After getting a basic idea of the prediction ability of logistic regression model.  I moved to a Random Forest Classifier.  This improved both my recall and precision scores.  
 
+I tried a Gradient Boosting Classifier as well.  
+
+This improved my recall, but lowered the precision.  
+
+
+After each round of modelling, I engineered additional columns. For example, I added columns to determine the amount activities completed, the days active before the prediction date.  I also made the decision to cut the data set to users who had more than 10 days of active use.  
 
 Confusion Matrix 
 
@@ -93,3 +106,8 @@ Confusion Matrix
 Recall|    TBD 
     </td>
 
+
+
+Additional Data Points of Interest
+Some additional data points may have increased the ability to predict who would stay active. 
+- Logged-in vs. Guest User
