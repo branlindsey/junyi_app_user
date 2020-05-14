@@ -19,6 +19,20 @@ def change_bool(df):
 def convert_dates(df, df_time_col):
     df['time_done'] = pd.to_datetime(df['time_done'],unit='us')
     
-def select_dat, df_time_col, date1, date2):
+def select_date(df, df_time_col, date1, date2):
     df = (df[(df[df_time_col]>=date1)& (df[df_time_col]<=date2)])
     return df 
+
+def create_target(filepath, start, end):
+    target_data = pd.read_pickle('../junyi_df.pickle')
+    convert_dates(target_data, 'time_done')
+    target_data = select_dates(target_data, 'time_done', start, end)
+    
+    target = dict()
+    for user in list(user_table.index):
+        if user in set(target_data['user_id']):
+            target[user] = 1
+        else: 
+            target[user] = 0
+
+    return target

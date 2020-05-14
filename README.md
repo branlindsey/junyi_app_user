@@ -1,6 +1,5 @@
 # junyi_app_user
-Determining how user duration differs among different types of users 
-
+Can we predict who will be using the site in the next week? In addition to provide valuable educational content.  Education apps and website use a variety of strategies like points, badges, personalized learning plans, and leaderboards to keep learners engaged in the content.  
 
 ## What is the story? 
 
@@ -23,7 +22,40 @@ Junyi Academy is a Chinese platform that was started with the help of Khan Acade
 
 https://www.junyiacademy.org/
 
-This data focuses on Geometry and Algrebra lessons in the platform from BLANK DATE to BLANK DATE.  
+Add a screenshot - taken! 
+
+This data focuses on Geometry and Algrebra lessons in the platform from October 2013 to January 2015. The entire dataset was used to complete EDA.  For modelling and predictions, the 2014 calendar year was used.   
+
+
+## Process
+
+#EDA
+To get a better sense of the entire data set, I performed exploratory data analysis.  I used the exploratory data analysis to get a sense of what feature engineering would be necessary.  
+
+Days Active Graph
+Around 2/3 of the users in the dataset were only active a single day.    
+
+Activities Graph
+There is a large spike at 10 activities.  This could be attributed to the fact that 10 correct activities in a row are needed to earn a proficiency in a topic.   Nearly half of all of the users in dataset got to this level of activities and then stopped using the site.   
+
+Days Active vs. Activities 
+This plot demonstrates that most of the usage clusters toward the bottom right, but there is also a wide variety of usage that extends beyond a hundred days and many thousands of activities.   
+
+Months? 
+It is possible to see that usage varies by month, especially during July and August. Schools in China take a break during this season too, but usage ramps up in the fall.   
+
+Can I get a turnover graph? 
+There is a lot of turnover! 
+
+#Data Preparation 
+The data set contains activities 
+- Show columns 
+
+#Modeling
+The initial model was a Logistic Regression performed using the mean statistics of users over the first 6 months of 2014 and then trying to predict whether these users would be active in the second part of the year. 
+
+I reviewed the beta-coefficients to get a sense of which features were impacting the prediction. 
+It looked like correct answers, whether hints were used, and the amount hints used were the most impactful.  
 
 
 
