@@ -26,7 +26,7 @@ def select_date(df, df_time_col, date1, date2):
 def create_target(filepath, start, end, user_table):
     target_data = pd.read_pickle('../junyi_df.pickle')
     convert_dates(target_data, 'time_done')
-    target_data = select_dates(target_data, 'time_done', start, end)
+    target_data = select_date(target_data, 'time_done', start, end)
     
     target = dict()
     for user in list(user_table.index):

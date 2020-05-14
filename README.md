@@ -11,11 +11,8 @@ As the school closure persists and the possibility of an even longer closure per
 
 Unfortunately, the apps that we are using don't make their data publicly available.  
 
-Finding a good set of education app/website data was not easy! After a lot of searching across of a variety of open data platforms.  I found 
+Finding a good set of education app/website data was not easy! After a lot of searching across of a variety of open data platforms.  Fortunately, I found the [DataShop] (https://pslcdatashop.web.cmu.edu/index.jspat) Carnegie Mellon University.  The website has datasets specifically targeted towards learing science. Here I was able to locate the [Junyi Academy Math](https://pslcdatashop.web.cmu.edu/Project?id=244) dataset. 
 
-https://pslcdatashop.web.cmu.edu/Project?id=244
-
-Number of data points (rows, pages scraped): 259259
 
 ## What is Junyi Academy
 [Junyi Academy](https://www.junyiacademy.org/) is a Chinese platform that was started with the help of Khan Academy, and uses many of the same strategies and metrics to teach students.   In this way, it will provide an approximation of the applications that many students around the world are currently using.  
@@ -49,9 +46,11 @@ To get a better sense of the entire data set, I performed exploratory data analy
 Around 2/3 of the users in the dataset were only active a single day. Looking at 10 days of usage, the curve flattens out, so I decided to use users with more than 10 days of usage for my prediction.    
 
 *Activities Graph*
+![Graph 2]
 There is a large spike at 10 activities.  This could be attributed to the fact that 10 correct activities in a row are needed to earn a proficiency in a topic.   Nearly half of all of the users in dataset got to this level of activities and then stopped using the site.   
 
 *Days Active vs. Activities*
+![Graph 3]
 This plot demonstrates that most of the usage clusters toward the bottom right, but there is also a wide variety of usage that extends beyond a hundred days and many thousands of activities.   
 
 *Months?* 
@@ -61,7 +60,7 @@ Can I get a turnover graph?
 There is a lot of turnover! 
 
 ### Data Preparation 
-The data set contains activities 
+The data was loaded into a Pandas DataFrame and cleaned by removing unneeded columns, and changing boolean values to integers.   
 - Show columns 
 
 
@@ -73,19 +72,19 @@ Because the churn rate is so high on this user set, the target value is heavily 
 
 I reviewed the beta-coefficients in the initial logistic regression. to get a sense of which features were impacting the prediction. 
 It looked like the features of correct answers, whether hints were used, and the amount hints used were the most impactful.  
+After getting a basic idea of the prediction ability of logistic regression model.  I moved to a Random Forest Classifier.  This improved both my recall and precision scores.  I used a GridSearch to settle on the hyperparameters to use on the Random Forest. 
 
-After getting a basic idea of the prediction ability of logistic regression model.  I moved to a Random Forest Classifier.  This improved both my recall and precision scores.  
-
-I tried a Gradient Boosting Classifier as well.  
-
-This improved my recall, but lowered the precision.  
+I tried a Gradient Boosting Classifier as well. I used a GridSearch to settle on the hyperparameters to use on the Random Forest.  This improved my recall, but lowered the precision.  
 
 
 After each round of modelling, I engineered additional columns. For example, I added columns to determine the amount activities completed, the days active before the prediction date.  I also made the decision to cut the data set to users who had more than 10 days of active use.  
 
+
+
 Confusion Matrix 
 
-
+## Add an ROC curve 
+## Add a Feature importance graph
 
 
 -Accuracy  of best:  0.7778
