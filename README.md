@@ -22,7 +22,9 @@ Junyi Academy is a Chinese platform that was started with the help of Khan Acade
 
 https://www.junyiacademy.org/
 
-Add a screenshot - taken! 
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png', width='200' height='200'> 
+
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='200' height='200'> 
 
 This data focuses on Geometry and Algrebra lessons in the platform from October 2013 to January 2015. The entire dataset was used to complete EDA.  For modelling and predictions, the 2014 calendar year was used.   
 
