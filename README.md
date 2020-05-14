@@ -22,7 +22,7 @@ Junyi Academy is a Chinese platform that was started with the help of Khan Acade
 
 https://www.junyiacademy.org/
 
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png', width='200' height='200'> 
+[screen_shot](https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png) 
 
 <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='200' height='200'> 
 
@@ -31,7 +31,7 @@ This data focuses on Geometry and Algrebra lessons in the platform from October 
 
 ## Process
 
-#EDA
+### EDA
 To get a better sense of the entire data set, I performed exploratory data analysis.  I used the exploratory data analysis to get a sense of what feature engineering would be necessary.  
 
 Days Active Graph
@@ -49,15 +49,46 @@ It is possible to see that usage varies by month, especially during July and Aug
 Can I get a turnover graph? 
 There is a lot of turnover! 
 
-#Data Preparation 
+### Data Preparation 
 The data set contains activities 
 - Show columns 
 
-#Modeling
+### Modeling
 The initial model was a Logistic Regression performed using the mean statistics of users over the first 6 months of 2014 and then trying to predict whether these users would be active in the second part of the year. 
 
 I reviewed the beta-coefficients to get a sense of which features were impacting the prediction. 
-It looked like correct answers, whether hints were used, and the amount hints used were the most impactful.  
+It looked like the features of correct answers, whether hints were used, and the amount hints used were the most impactful.  
 
 
+
+Confusion Matrix 
+<table> 
+<tr>
+<td>
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png', width='200' height='200'> 
+    </td>
+<td> 
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png', width='200' height='200'> 
+    </td>
+ <\table>
+
+
+
+-Accuracy  of best:  0.7778
+-Precision of best:  0.7381684081130916
+-Recall    of best:  0.6367974549310711
+
+
+|     |  Actual+   |  Actual-   |
+|----:|:-----------|:-----------|
+|Pred+|    2500    |    793     |
+|Pred-|    1290    |   5417     |
+    </td>
+<td> 
+|     |  Score  |   
+|----:|:-----------|
+|Precision|   TBD  
+|Accuracy|    TBD     
+Recall|    TBD 
+    </td>
 
