@@ -19,6 +19,6 @@ def change_bool(df):
 def convert_dates(df, df_time_col):
     df['time_done'] = pd.to_datetime(df['time_done'],unit='us')
     
-def select_dates(df, df_time_col, date1, date2):
+def select_dat, df_time_col, date1, date2):
     df = (df[(df[df_time_col]>=date1)& (df[df_time_col]<=date2)])
     return df 
