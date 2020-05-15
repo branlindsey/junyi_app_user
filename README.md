@@ -1,5 +1,5 @@
 # junyi_app_user
-Can we predict who will be using Junyi Academy next month based on usage features?  
+### Can we predict who will be using Junyi Academy next month based on usage features?  
 
 The company wants to know what features are important to understand who will use from one month to the next.   They want to roll out a new feature that can be unlocked by longer term users. Live Online Tutoring!!! 
 
@@ -153,6 +153,7 @@ As seen in the confusion matrix, our true positives went way up.  Overall the ch
 The retention rate of users who met our criteria increased from 22% in October to 71% in December. It is difficult with the set of the data determine if this seasonal or a general uptick. Students could be cramming for Geometry and Algebra finals.  We do see a general uptick in usage over the course of the year.  Further statitistical anaylsis could be done to see if this is a significant increase.   
 
 **Assumption Time** 
+
 Back to the problem at hand, can we get enough long term users to use tutoring in order to meet the needs of the benevolent tech giant.  
 
 We think students may be willing to do 4 hours per month of tutoring at a cost 100 dollars per hour. and we assume that 5% of retaining students who get the offer accept. Next, we assume that .25% of incorrectly predicted actually retain and accept.  Unfortunately, our prediction misses on the false negagtives so they are costing us.  Let's put this in dollars.      
