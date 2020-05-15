@@ -1,5 +1,4 @@
-# junyi_app_user
-### Can we predict who will be using Junyi Academy next month based on usage features?  
+# Can we predict who will be using Junyi Academy next month based on usage features?  
 
 The company wants to know what features are important to understand who will use from one month to the next.   They want to roll out a new feature that can be unlocked by longer term users. Live Online Tutoring!!! 
 
