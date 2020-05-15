@@ -170,6 +170,8 @@ Boss do you want to be risky?  If we underspend, we don't look good to a the ben
 
 
 
-### Additional Data Points of Interest
-Some additional data points may have increased the ability to predict who would stay active. 
-- Logged-in vs. Guest User
+### Future Work and Additional Data Points of Interest
+- Significance testing on the December user gain
+- Additional feature engineering
+- Some additional data points may have increased the ability to predict who would stay active. 
+    -  Logged-in vs. Guest User
