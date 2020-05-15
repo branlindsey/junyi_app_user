@@ -60,10 +60,10 @@ Can I get a turnover graph?
 There is a lot of turnover! 
 
 ### Data Preparation 
-The data was loaded into a Pandas DataFrame and cleaned by removing unneeded columns, and changing boolean values to integers.   
-- Show columns 
+The data was loaded into a Pandas DataFrame and cleaned. They data consisted a variety of information related to each excercise taken by a student.  
+![Data Image](https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%203.40.54%20PM.png)
 
-
+To predict user whether a user would be active I needed aggregate the user information into a new table and engineer features that improve the prediction. 
 
 ### Modeling
 The initial model was a Logistic Regression performed using the mean statistics of users over the first 6 months of 2014 and then trying to predict whether these users would be active in the second part of the year. 
