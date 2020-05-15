@@ -45,17 +45,18 @@ This data focuses on Geometry and Algrebra lessons in the platform from October 
 ### EDA
 To get a better sense of the entire data set, I performed exploratory data analysis.  I used the exploratory data analysis to get a sense of what feature engineering would be necessary.  
 
-**Days Active **
+**Days Active**
+
 ![Graph 1](https://github.com/branlindsey/junyi_app_user/blob/master/images/users_vs_active_days.png)
 
 Around 2/3 of the users in the dataset were only active a single day. Looking at 10 days of usage, the curve flattens out, so I decided to use users with more than 10 days of usage for my prediction.    
 
-*Activities Graph*
-![Graph 2]
+**Activities**
+![Graph 2](https://github.com/branlindsey/junyi_app_user/blob/master/images/users_vs_activities.png) 
 There is a large spike at 10 activities.  This could be attributed to the fact that 10 correct activities in a row are needed to earn a proficiency in a topic.   Nearly half of all of the users in dataset got to this level of activities and then stopped using the site.   
 
 *Days Active vs. Activities*
-![Graph 3]
+![Graph 3](https://github.com/branlindsey/junyi_app_user/blob/master/images/days_vs_activities.png)
 This plot demonstrates that most of the usage clusters toward the bottom right, but there is also a wide variety of usage that extends beyond a hundred days and many thousands of activities.   
 
 *Months?* 
