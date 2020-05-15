@@ -8,7 +8,7 @@ A benevolent tech giant want to donate the staff time to hold live Zoom tutoring
 Soo....Data Science anyone? 
 
 
-## What is backstory? 
+## What is the backstory? 
 
 As public schools have shut down across the country, students and educators at all levels have been forced to develop new strategies.  One of the primary strategies has been educational apps.  
 
@@ -97,7 +97,7 @@ Recall    |       .554 |
 <table> 
 <tr>
 <td>
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png'> 
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/rfroc.png'> 
     </td>
 <td> 
   
@@ -107,6 +107,7 @@ Recall    |       .554 |
     </td>
 </table> 
     
+
 
 ### Final Gradient Boosting Classifier Prediction
 
@@ -126,13 +127,13 @@ Recall    |       .573 |
 <table> 
 <tr>
 <td>
-<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.07.56%20AM.png'> 
+<img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/gbroc.png'> 
     </td>
 <td> 
   
 </td>    
 <td>
- <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png'> 
+ <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/gbfi.png'> 
     </td>
 </table> 
     
