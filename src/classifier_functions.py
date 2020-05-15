@@ -41,7 +41,8 @@ def standard_confusion_matrix(y_true, y_predict):
 
 
 def confusion_matrix_to_df(confusion_matrix):
-    df = pd.DataFrame(confusion_matrix, columns=['Actual True', 'Actual False'], index=['Predicted True', 'Predicted False'])
+    df = pd.DataFrame(confusion_matrix, columns=['Actual True', 'Actual False'], 
+                      index=['Predicted True', 'Predicted False'])
     return df                                                       
                                                                       
                                                                       
