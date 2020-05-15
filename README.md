@@ -80,6 +80,8 @@ I reviewed the beta-coefficients in the initial logistic regression. to get a se
 After getting a basic idea of the prediction ability of logistic regression model.  I moved to a Random Forest Classifier.  This improved both my recall and precision scores.  I used a GridSearch to settle on the hyperparameters to use on the Random Forest. Next, I tried a Gradient Boosting Classifier as well. I used a GridSearch to settle on the hyperparameters to use.  This improved my recall, but lowered the precision.  After each round of modelling, I engineered additional columns. For example, I added columns to determine the amount activities completed, the days active before the prediction date.  Finally, I made the decision to cut the data set to users who had more than 10 days of active use. This mostly impacted my accuracy score.  
 
 #### Final Random Forest Prediction
+
+**Dev Testing**
 |     |  Actual+   |  Actual-   |
 |----:|:-----------|:-----------|
 |Pred+|    759    |    225    |
