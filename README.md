@@ -94,19 +94,10 @@ After getting a basic idea of the prediction ability of logistic regression mode
 |Precision|   .771 |   
 Recall    |       .554 |
 
-<table> 
-<tr>
-<td>
+
 <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/rfroc.png'> 
-    </td>
-<td> 
-  
-</td>    
-<td>
- <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/Screen%20Shot%202020-05-14%20at%2011.08.25%20AM.png'> 
-    </td>
-</table> 
-    
+ <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/rffi.png'> 
+   
 
 
 ### Final Gradient Boosting Classifier Prediction
@@ -124,18 +115,11 @@ Recall    |       .554 |
 |Precision|   .719 |   
 Recall    |       .573 |
 
-<table> 
-<tr>
-<td>
+
 <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/gbroc.png'> 
-    </td>
-<td> 
-  
-</td>    
-<td>
+
  <img src='https://github.com/branlindsey/junyi_app_user/blob/master/images/gbfi.png'> 
-    </td>
-</table> 
+    
     
 
 
@@ -151,8 +135,6 @@ Recall    |       .573 |
 *Months?* 
 It is possible to see that usage varies by month, especially during July and August. Schools in China take a break during this season too, but usage ramps up in the fall.   
 
-Can I get a turnover graph? 
-There is a lot of turnover! 
 
 
 Additional Data Points of Interest
