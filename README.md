@@ -1,6 +1,6 @@
 # Can we predict who will be using Junyi Academy next month based on usage features?  
 
-The company wants to know what features are important to understand who will use from one month to the next.   They want to roll out a new feature that can be unlocked by longer term users. Live Online Tutoring!!! 
+Let's suppose......Our company wants to know what features are important to understand who will use from one month to the next.   They want to roll out a new feature that can be unlocked by longer term users. Live Online Tutoring!!! 
 
 A benevolent tech giant want to donate the staff time to hold live Zoom tutoring sessions. This is valued at 100 dollars per hour of tutoring, but they need about a month to get staffing together. They have a want to give 25,000 dollars per month.  If we can't say that we will use it, they may find another online learning platform.  
 
