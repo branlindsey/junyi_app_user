@@ -131,9 +131,9 @@ Looking at the ROC plots above, it looks like something happened in our final te
    
 |         |   GBC Score |  RFC Score| 
 |--------:|:--------|---------------|
-|Accuracy | .693    |   .860        |
-|Precision|   .801 |   .771   |
-|Recall    |       .772 | .554  |
+|Accuracy | .693    |   .693        |
+|Precision|   .801 |   .822   |
+|Recall    |       .772 | .743  |
 
 I had looked at monthly usage before but I did not think that the churn would change so much in a month. Our model had not seen this data yet.  
 
